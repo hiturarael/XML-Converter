@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class ConvertToXml
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -28,6 +28,7 @@ Partial Class Form1
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.convertPathTBox = New System.Windows.Forms.TextBox()
         Me.ConvertPathBtn = New System.Windows.Forms.Button()
+        Me.ConvertBtn = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'filePathTbox
@@ -66,17 +67,27 @@ Partial Class Form1
         Me.ConvertPathBtn.Text = "Convert File"
         Me.ConvertPathBtn.UseVisualStyleBackColor = True
         '
-        'Form1
+        'ConvertBtn
+        '
+        Me.ConvertBtn.Location = New System.Drawing.Point(288, 105)
+        Me.ConvertBtn.Name = "ConvertBtn"
+        Me.ConvertBtn.Size = New System.Drawing.Size(75, 23)
+        Me.ConvertBtn.TabIndex = 4
+        Me.ConvertBtn.Text = "Convert"
+        Me.ConvertBtn.UseVisualStyleBackColor = True
+        '
+        'ConvertToXml
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(616, 149)
+        Me.Controls.Add(Me.ConvertBtn)
         Me.Controls.Add(Me.ConvertPathBtn)
         Me.Controls.Add(Me.convertPathTBox)
         Me.Controls.Add(Me.GetFilePath)
         Me.Controls.Add(Me.filePathTbox)
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "ConvertToXml"
+        Me.Text = "Convert To XML"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -87,5 +98,6 @@ Partial Class Form1
     Friend WithEvents OpenFileDialog1 As System.Windows.Forms.OpenFileDialog
     Friend WithEvents convertPathTBox As System.Windows.Forms.TextBox
     Friend WithEvents ConvertPathBtn As System.Windows.Forms.Button
+    Friend WithEvents ConvertBtn As System.Windows.Forms.Button
 
 End Class

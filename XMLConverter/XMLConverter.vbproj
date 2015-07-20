@@ -71,11 +71,11 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.vb">
+    <Compile Include="ConvertToXml.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="ConvertToXml.Designer.vb">
+      <DependentUpon>ConvertToXml.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -93,11 +93,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="XML.vb" />
+    <Compile Include="XMLConverter.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="ConvertToXml.resx">
+      <DependentUpon>ConvertToXml.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -105,8 +105,13 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="obj\Debug\XMLConverter.Form1.resources" />
+    <EmbeddedResource Include="obj\Debug\XMLConverter.Resources.resources" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bin\Debug\XMLConverter.exe.config" />
+    <None Include="bin\Debug\XMLConverter.vshost.exe.config" />
+    <None Include="bin\Debug\XMLConverter.vshost.exe.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -117,6 +122,10 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferences.cache" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="obj\Debug\XMLConverter.vbproj.GenerateResource.Cache" />
+    <None Include="obj\Debug\XMLConverter.vbproj.ResolveComReference.cache" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
@@ -149,6 +158,21 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bin\Debug\XMLConverter.exe" />
+    <Content Include="bin\Debug\XMLConverter.pdb" />
+    <Content Include="bin\Debug\XMLConverter.vshost.exe" />
+    <Content Include="bin\Debug\XMLConverter.xml" />
+    <Content Include="obj\Debug\Interop.Microsoft.Office.Core.dll" />
+    <Content Include="obj\Debug\TempPE\My Project.Resources.Designer.vb.dll" />
+    <Content Include="obj\Debug\XMLConverter.exe" />
+    <Content Include="obj\Debug\XMLConverter.pdb" />
+    <Content Include="obj\Debug\XMLConverter.vbproj.FileListAbsolute.txt" />
+    <Content Include="obj\Debug\XMLConverter.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Release\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

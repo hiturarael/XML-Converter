@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class ConvertToXml
 
     Private Sub GetFilePath_Click(sender As Object, e As EventArgs) Handles GetFilePath.Click
         Dim directory As New OpenFileDialog
@@ -34,5 +34,13 @@
             End If
             convertPathTBox.Text = apppath
         End If
+    End Sub
+
+
+    Private Sub ConvertBtn_Click(sender As Object, e As EventArgs) Handles ConvertBtn.Click
+        Dim records As New XMLConverter
+
+        records.startRecord(filePathTbox.Text)
+
     End Sub
 End Class
