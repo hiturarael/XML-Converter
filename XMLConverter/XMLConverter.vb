@@ -19,6 +19,8 @@ Public Class XMLConverter
 
         Workbook = APP.ActiveWorkbook
 
+        Console.WriteLine(Workbook.Sheets.)
+
         For i = 1 To Workbook.Sheets.Count
             worksheetNames(i) = Workbook.Name.ToString
             Console.WriteLine(Workbook.Name.ToString)

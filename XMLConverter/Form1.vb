@@ -1,4 +1,4 @@
-﻿Public Class ConvertToXml
+﻿Public Class Form1
 
     Private Sub GetFilePath_Click(sender As Object, e As EventArgs) Handles GetFilePath.Click
         Dim directory As New OpenFileDialog
